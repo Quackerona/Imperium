@@ -1,3 +1,8 @@
+<script setup lang="ts">
+  document.body.style.backgroundImage = 'url("/bg.png")';
+  document.body.style.overflowY = "auto";
+</script>
+
 <template>
   <img ref="pattern" id="pattern" src="/pattern.png" draggable="false">
   <img ref="pattern2" id="pattern2" src="/pattern.png" draggable="false">

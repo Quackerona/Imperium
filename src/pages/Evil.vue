@@ -1,3 +1,8 @@
+<script setup lang="ts">
+  document.body.style.backgroundImage = "none";
+  document.body.style.overflowY = "hidden";
+</script>
+
 <template>
     <img id="text" src="/pages/confession/text.png" draggable="false">
     <img id="text2" src="/pages/confession/text.png" draggable="false">
