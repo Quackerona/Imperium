@@ -1,0 +1,144 @@
+body {
+    background-image: url("/bg.png");
+    background-color: red;
+}
+
+#pattern {
+    position: fixed;
+
+    min-width: 110%;
+
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#pattern2 {
+    position: fixed;
+
+    min-width: 110%;
+
+    transform: translateX(100%);
+
+    animation-name: scroll2;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#detail {
+    position: absolute;
+
+    max-width: 100%;
+    
+    left: 50%;
+    transform: translate(-50%, 6%);
+}
+
+#homeBtn {
+    position: absolute;
+
+    max-width: 16.45%;
+
+    left: 50%;
+    transform: translate(-279%, 155%);
+}
+
+#aboutBtn {
+    position: absolute;
+
+    max-width: 16.45%;
+
+    left: 50%;
+    transform: translate(-159%, 155%);
+}
+
+#logo {
+    position: relative;
+
+    left: 50%;
+
+    max-width: 100%;
+
+    animation-name: logoSwing;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, -5%)
+    }
+    
+    100% {
+        transform: translate(-100%, -5%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translate(100%, -5%)
+    }
+    
+    100% {
+        transform: translate(0%, -5%);
+    }
+}
+
+@keyframes logoSwing {
+    0% {
+        transform: translateX(-50%) rotate(-3deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(3deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(-3deg);
+    }
+}
+
+#text {
+    position: fixed;
+
+    min-width: 100%;
+
+    transform: translate(-5%, 100%);
+
+    animation-name: textScroll;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  #text2 {
+    position: fixed;
+
+    min-width: 100%;
+
+    transform: translate(-5%, 0%);
+    
+    animation-name: textScroll2;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes textScroll {
+    0% {
+      transform: translate(-5%, 0%)
+    }
+    100% {
+      transform: translate(-5%, 100%)
+    }
+  }
+
+  @keyframes textScroll2 {
+    0% {
+      transform: translate(-5%, -100%)
+    }
+    100% {
+      transform: translate(-5%, 0%)
+    }
+}

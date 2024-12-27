@@ -1,32 +1,33 @@
 <template>
-  <img id="logo" src="/logo.png" draggable="false">
+  <img ref="pattern" id="pattern" src="/pattern.png" draggable="false">
+  <img ref="pattern2" id="pattern2" src="/pattern.png" draggable="false">
 
-  <img id="homeDetail" src="/pages/home/homeDetail.png" draggable="false">
+  <img ref="logo" id="logo" src="/logo.png" draggable="false">
 
-  <RouterLink to="/buy"><img id="interested" src="/pages/home/interested.png"></RouterLink>
+  <div>
+    <img ref="detail" id="detail" src="/pages/home/homeDetail.png" draggable="false">
 
-  <video id="ad" ref="ad" controls width="800" draggable="false">
-    <source src="/pages/home/ad.mp4" type="video/mp4">
-  </video>
+    <RouterLink to="/buy"><img ref="interested" id="interested" src="/pages/home/interested.png"></RouterLink>
+
+    <video id="ad" ref="ad" controls width="800">
+      <source src="/pages/home/ad.mp4" type="video/mp4">
+    </video>
+
+    <div>
+      <RouterLink to="/"><img ref="homeBtn" id="homeBtn" src="/home.png"></RouterLink>
+      <RouterLink to="/about"><img ref="aboutBtn" id="aboutBtn" src="/about.png"></RouterLink>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-  #homeDetail {
-    position: absolute;
-
-    max-width: 100%;
-    
-    left: 50%;
-    transform: translate(-50%, 31.5%);
-  }
-
   #ad {
     position: absolute;
 
     max-width: 78.5%;
 
     left: 50%;
-    transform: translate(-50%, 250%);
+    transform: translate(-50%, 190%);
   }
 
   #interested {
@@ -35,31 +36,6 @@
     max-width: 60.33%;
 
     left: 50%;
-    transform: translate(-50%, 3420%);
-  }
-
-  #logo {
-      position: relative;
-
-      left: 50%;
-
-      max-width: 100%;
-
-      animation-name: logoSwing;
-      animation-timing-function: ease-in-out;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-  }
-
-  @keyframes logoSwing {
-      0% {
-          transform: translateX(-50%) rotate(-3deg);
-      }
-      50% {
-          transform: translateX(-50%) rotate(3deg);
-      }
-      100% {
-          transform: translateX(-50%) rotate(-3deg);
-      }
+    transform: translate(-50%, 2770%);
   }
 </style>
